@@ -1,0 +1,122 @@
+header {
+    width: 100%;
+    background: black;
+    height: 150px;
+    position: relative;
+    bottom: 70px;
+}
+h1 {
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+main {
+    font-size: 100px;
+}
+.mainText {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-family: 'Source Code Pro';
+}
+.mainText::before {
+    content: '1';
+    display: inline-block;
+    background: lightBlue;
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    font-size: 50px;
+    top: 30px;
+    left: 100px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+strong {
+    font-size: 130px;
+}
+
+
+.tracker {
+   position: relative; 
+    top: 100px;
+    text-align: center;
+}
+.tracker::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    left: 210px;
+    height: 30px;
+    background: linear-gradient(to bottom, blue,blueviolet);
+    border-radius: 80px;
+    margin: 0;
+}
+nav {
+    width: 500px;
+    height: 500px;
+}
+.navbar {
+    width: 200px;
+    height: 200px;
+    background: #716aff;
+    font-size: 100px;
+    text-align: center;
+    border: black solid 5px;
+    border-radius: 50%;
+    position: relative;
+    left: 650px;
+    top: 50px;
+}
+.rotation {
+    transition: transform 0.8s ease;
+    transform: rotate(180deg);
+}
+.reverse_rotation {
+    transition: transform 0.8s ease-in-out;
+    transform: rotate(0 -180deg);
+}
+.exams {
+position: absolute;
+left: 10px;
+bottom: 20px;
+    display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100px;
+   background: transparent;
+   height: 100px;
+   font-size: 40px;
+   text-align: center;
+   border: none;
+}
+section {
+    width: 700px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    background: #8098ff;
+    top: 500px;
+}
+
+.sectionUp {
+    transition: transform 1s ease-in-out;
+    transform: translateY(-500px);
+}
+.sectionDown {
+    transition: transform 1s ease-in-out 0.2s;
+    transform: translateY(500px);
+  }
